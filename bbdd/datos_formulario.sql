@@ -1,0 +1,13 @@
+SET NAMES utf8;
+SET FOREIGN_KEY_CHECKS = 0;
+DROP TABLE IF EXISTS `datos_formulario`;
+CREATE TABLE IF NOT EXISTS `datos_formulario` (
+ id INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ nombre VARCHAR(50) NOT NULL,
+ apellidos VARCHAR(50) NOT NULL,
+ email VARCHAR(100) NOT NULL,
+ presupuesto DECIMAL(10,2) NOT NULL,
+ metodo_pago VARCHAR(20) NOT NULL,
+ descripcion TEXT NOT NULL,
+ imagen BLOB
+);
